@@ -5,7 +5,7 @@
 import math
 a , b, c = 2 , 4 , 6
 def average(a: float, b: float, c: float) -> float:
-    average == (a+b+c)/2
+    average == (a+b+c)/2.0
     return average
 
 
