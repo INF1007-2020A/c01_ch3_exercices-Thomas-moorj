@@ -13,8 +13,13 @@ Traceback (most recent call last):
   File "test_exercice.py", line 20, in <listcomp>
     output = [exercice.average(*v) for v in values]
   File "/home/runner/work/c01_ch3_exercices-Thomas-moorj/c01_ch3_exercices-Thomas-moorj/exercice.py", line 8, in average
-    average(a )
-TypeError: average() missing 2 required positional arguments: 'b' and 'c'
+    average(a, b, c)
+  File "/home/runner/work/c01_ch3_exercices-Thomas-moorj/c01_ch3_exercices-Thomas-moorj/exercice.py", line 8, in average
+    average(a, b, c)
+  File "/home/runner/work/c01_ch3_exercices-Thomas-moorj/c01_ch3_exercices-Thomas-moorj/exercice.py", line 8, in average
+    average(a, b, c)
+  [Previous line repeated 971 more times]
+RecursionError: maximum recursion depth exceeded
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
@@ -80,6 +85,6 @@ First differing element 0:
 + [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748] : Mauvais calcul de degres -> radians
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.001s
+Ran 5 tests in 0.005s
 
 FAILED (failures=4, errors=1)
