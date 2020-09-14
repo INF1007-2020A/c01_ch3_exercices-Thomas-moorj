@@ -18,9 +18,6 @@ def to_degrees(angle_rads: float) -> tuple:
     degrees= math.degrees (angle_rads)
     
     minutes= (degrees)[0] * 60
-
-    
-    
    
     seconds= math.modf(minutes)[0] * 3600
    
