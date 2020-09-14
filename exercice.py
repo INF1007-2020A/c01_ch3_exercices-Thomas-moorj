@@ -6,7 +6,7 @@ import math
 moyenne = None
 a , b, c = 2 , 4 , 6
 def average(a: float, b: float, c: float) -> float:
-   float moyenne = (a+b+c)/2
+    moyenne = (a+b+c)/2
     return 0.0
 
 
