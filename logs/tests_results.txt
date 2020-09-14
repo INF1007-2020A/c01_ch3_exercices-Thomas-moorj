@@ -1,25 +1,23 @@
-test_average (__main__.TestExercice) ... ERROR
+test_average (__main__.TestExercice) ... FAIL
 test_to_celsius (__main__.TestExercice) ... FAIL
 test_to_degrees (__main__.TestExercice) ... FAIL
 test_to_farenheit (__main__.TestExercice) ... FAIL
 test_to_radians (__main__.TestExercice) ... FAIL
 
 ======================================================================
-ERROR: test_average (__main__.TestExercice)
+FAIL: test_average (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 20, in test_average
-    output = [exercice.average(*v) for v in values]
-  File "test_exercice.py", line 20, in <listcomp>
-    output = [exercice.average(*v) for v in values]
-  File "/home/runner/work/c01_ch3_exercices-Thomas-moorj/c01_ch3_exercices-Thomas-moorj/exercice.py", line 8, in average
-    average(a, b, c)
-  File "/home/runner/work/c01_ch3_exercices-Thomas-moorj/c01_ch3_exercices-Thomas-moorj/exercice.py", line 8, in average
-    average(a, b, c)
-  File "/home/runner/work/c01_ch3_exercices-Thomas-moorj/c01_ch3_exercices-Thomas-moorj/exercice.py", line 8, in average
-    average(a, b, c)
-  [Previous line repeated 971 more times]
-RecursionError: maximum recursion depth exceeded
+  File "test_exercice.py", line 26, in test_average
+    'Mauvais calcul de la moyenne'
+AssertionError: Lists differ: [6.0, 0.0, -3.5] != [4.0, 0.0, -2.3333333333333335]
+
+First differing element 0:
+6.0
+4.0
+
+- [6.0, 0.0, -3.5]
++ [4.0, 0.0, -2.3333333333333335] : Mauvais calcul de la moyenne
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
@@ -85,6 +83,6 @@ First differing element 0:
 + [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748] : Mauvais calcul de degres -> radians
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.005s
+Ran 5 tests in 0.001s
 
-FAILED (failures=4, errors=1)
+FAILED (failures=5)
